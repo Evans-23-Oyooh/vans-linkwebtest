@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Kizito VTI Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+            color: #007f3f; /* Green color for headings */
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="date"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #007f3f; /* Green color for buttons */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #00532e; /* Darker green on hover */
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Print button styling */
+        .print-button {
+            background-color: #007f3f;
+            color: white;
+            padding: 20px 20px;
+            border: none;
+            gap: 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .print-button:hover {
+            background-color: #00532e;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+        <img src="img/logo.jpg" alt="St. Kizito VTI Logo" style="width: 100px; height: 100px; margin-bottom: 5px;">
+        <h1>St. Kizito VTI - Vocational Training Institute</h1>
+        <p style="font-size: 10;">PO Box 759 - 00618 RUARAKA - NAIROBI, KENYA PIN No. PO51097616A (ARCH-DIOCESE OF NAIROBI)
+            Registration No. MOEST/PC/886/04 Headquarters: Githurai-Kimbo, Tel. 020-2518188 Tel & Fax. 020-2103935
+            Mobile: 0724-238716 Branch: Roysambu (Kasarani Roundabout),Tel & Fax. 020-2196799 Mobile: 0724-253547
+            E –mail: stk.githurai@gmail.com, Website: www.stkizito.com</p>
+        <h2> COURSE APPLICATION FORM</h2>
+        <p style="font-size: 10;">All information given will be treated in the strictest confidence -- please complete the form using a Blue pen</p>
+
+        <form action="#" method="post">
+            <label for="course">COURSE APPLIED FOR:</label>
+            <input type="text" id="course" name="course">
+
+            <h3>STUDENT’S INFORMATION</h3>
+            <div class="clearfix">
+                <label for="surname">STUDENT’S SURNAME:</label>
+                <input type="text" id="surname" name="surname">
+
+                <label for="firstName">FIRST NAME:</label>
+                <input type="text" id="firstName" name="firstName">
+
+                <label for="other">OTHER:</label>
+                <input type="text" id="other" name="other">
+            </div>
+
+            <div class="clearfix">
+                <label>GENDER:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">MALE</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">FEMALE</label>
+
+                <label for="nationalId">NATIONAL ID NO:</label>
+                <input type="text" id="nationalId" name="nationalId">
+
+                <label for="pin">PIN NO:</label>
+                <input type="text" id="pin" name="pin">
+            </div>
+
+            <div class="clearfix">
+                <label for="dob">DATE OF BIRTH:</label>
+                <input type="date" id="dob" name="dob">
+
+                <label for="placeOfBirth">PLACE OF BIRTH:</label>
+                <input type="text" id="placeOfBirth" name="placeOfBirth">
+            </div>
+
+            <div class="clearfix">
+                <label for="mobile">MOBILE NO:</label>
+                <input type="tel" id="mobile" name="mobile">
+
+                <label for="whatsapp">WHATSAPP NO:</label>
+                <input type="tel" id="whatsapp" name="whatsapp">
+
+                <label for="email">EMAIL ADDRESS:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <label for="town">TOWN OF RESIDENCE:</label>
+            <input type="text" id="town" name="town">
+
+            <label for="county">COUNTY:</label>
+            <input type="text" id="county" name="county">
+
+            <label for="postalAddress">POSTAL ADDRESS:</label>
+            <input type="text" id="postalAddress" name="postalAddress">
+
+            <label for="code">CODE:</label>
+            <input type="text" id="code" name="code">
+
+            <label for="finishSchool">When did you finish School (Year)?</label>
+            <input type="text" id="finishSchool" name="finishSchool">
+
+            <label for="highSchool">Name of High School attended:</label>
+            <input type="text" id="highSchool" name="highSchool">
+
+            <label for="primarySchool">Name of Primary School attended:</label>
+            <input type="text" id="primarySchool" name="primarySchool">
+
+            <label for="educationGrade">Which grade/Marks did you obtain in your highest level of education?</label>
+            <input type="text" id="educationGrade" name="educationGrade">
+
+            <label for="religion">What is your religion?</label>
+            <input type="text" id="religion" name="religion">
+
+            <label for="denomination">Denomination:</label>
+            <input type="text" id="denomination" name="denomination">
+
+            <label for="knowAbout">How did you get to know about St. Kizito Vocational Training Institute?</label>
+            <input type="checkbox" id="radio" name="knowAbout" value="radio">
+            <label for="radio">Radio</label>
+
+            <input type="checkbox" id="newspaper" name="knowAbout" value="newspaper">
+            <label for="newspaper">Newspaper</label>
+            <input type="checkbox" id="church" name="knowAbout" value="church">
+            <label for="church">Church</label>
+
+            <input type="checkbox" id="announcement" name="knowAbout" value="announcement">
+            <label for="announcement">Announcement</label>
+
+            <input type="checkbox" id="friends" name="knowAbout" value="friends">
+            <label for="friends">Friends</label>
+
+            <input type="checkbox" id="others" name="knowAbout" value="others">
+            <label for="others">Others (specify):</label>
+            <input type="text" id="otherSpecify" name="otherSpecify">
+
+            <h3>UPPLOAD / ATTACH DOCUMENTS:</h3>
+            <p>(If printed please attach the documents below)</p>
+
+            <label for="photo">PHOTO PASSPORT SIZE:</label>
+            <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+
+            <label for="kcse">CERTIFICATE OF SECONDARY EDUCATION (KCSE):</label>
+            <input type="file" id="kcse" name="kcse" accept=".pdf, .doc, .docx"><br><br>
+
+            <label for="idCopy">ID PHOTOCOPY:</label>
+            <input type="file" id="idCopy" name="idCopy" accept="image/*, .pdf"><br><br>
+
+            <label for="schoolLeaving">SCHOOL LEAVING CERTIFICATE:</label>
+            <input type="file" id="schoolLeaving" name="schoolLeaving" accept=".pdf, .doc, .docx"><br><br>
+
+            <label for="birthCertificate">BIRTH CERTIFICATE:</label>
+            <input type="file" id="birthCertificate" name="birthCertificate" accept="image/*, .pdf"><br><br>
+
+            <label for="othersSpecify">OTHERS (Specify):</label>
+            <input type="file" id="othersSpecify" name="othersSpecify" multiple><br><br>
+
+            <p>Form issued on 4/12/2020 Page 2 of 3</p>
+
+            <h3>PARENTS’ OR GUARDIAN’S INFORMATION</h3>
+            <label for="maritalStatus">Marital Status:</label>
+            <select id="maritalStatus" name="maritalStatus">
+                <option value="married">Married</option>
+                <option value="divorced">Divorced/Separated</option>
+                <option value="neverMarried">Never Married</option>
+                <option value="widowed">Widowed</option>
+            </select>
+
+            <label for="dependents">No. of dependents:</label>
+            <input type="number" id="dependents" name="dependents">
+
+            <div class="clearfix">
+                <label>Father</label>
+                <input type="text" id="fatherName" name="fatherName" placeholder="Name">
+                <input type="text" id="fatherId" name="fatherId" placeholder="I.D No.">
+                <input type="tel" id="fatherTel" name="fatherTel" placeholder="Mobile/Tel No.">
+
+                <label>Mother</label>
+                <input type="text" id="motherName" name="motherName" placeholder="Name">
+                <input type="text" id="motherId" name="motherId" placeholder="I.D No.">
+                <input type="tel" id="motherTel" name="motherTel" placeholder="Mobile/Tel No.">
+
+                <label>Guardian/Sponsor</label>
+                <input type="text" id="guardianName" name="guardianName" placeholder="Name">
+                <input type="text" id="guardianId" name="guardianId" placeholder="I.D No.">
+                <input type="tel" id="guardianTel" name="guardianTel" placeholder="Mobile/Tel No.">
+            </div>
+
+            <label for="medicalConditions">Do you have any medical conditions? (If yes, state which)</label>
+            <textarea id="medicalConditions" name="medicalConditions"></textarea>
+
+            <label>Have you done any course before?</label>
+            <input type="radio" id="courseBeforeYes" name="courseBefore" value="yes">
+            <label for="courseBeforeYes">Yes</label>
+
+            <input type="radio" id="courseBeforeNo" name="courseBefore" value="no">
+            <label for="courseBeforeNo">No</label>
+
+            <label>If yes, which?</label>
+            <input type="text" id="previousCourse" name="previousCourse">
+
+            <label>If admitted in our Institution, who will be paying your school fees?</label>
+            <input type="checkbox" id="feesParents" name="feesPayer" value="parents">
+            <label for="feesParents">Parents</label>
+
+            <input type="checkbox" id="feesGuardian" name="feesPayer" value="guardian">
+            <label for="feesGuardian">Guardian</label>
+
+            <input type="checkbox" id="feesSponsor" name="feesPayer" value="sponsor">
+            <label for="feesSponsor">Sponsor</label>
+            <input type="text" id="sponsorName" name="sponsorName" placeholder="Give Name and contact of Sponsor">
+
+            <input type="checkbox" id="feesSelfSponsored" name="feesPayer" value="selfSponsored">
+            <label for="feesSelfSponsored">Self - Sponsored</label>
+
+            <p>Form issued on 4/12/2020 Page 3 of 3</p>
+
+            <h3>Recommendation (2)</h3>
+
+            <label>Priest/Pastor/Kadhi:</label>
+            <input type="text" id="recommendationName" name="recommendationName" placeholder="Name of the Priest/Pastor/Kadhi">
+
+            <label>This is to certify that St. Kizito VTI applicant is a member of:</label>
+            <input type="text" id="recommendationChurch" name="recommendationChurch" placeholder="Church/Mosque">
+
+            <label>Character:</label>
+            <textarea id="recommendationCharacter" name="recommendationCharacter"></textarea>
+
+            <label>I, certify that all the information provided above is correct.</label>
+            <input type="text" id="certifyInfo" name="certifyInfo" placeholder="Official stamp Date">
+
+            <h3>DECLARATIONS by STUDENT and PARENT/GUARDIAN</h3>
+
+            <ol>
+                <li>
+                    <label>I hereby declare that ALL the information provided in this application form are correct and complete.</label>
+                </li>
+                <li>
+                    <label>I hereby acknowledge that if ANY of the information provided in this application form are found to be false, misleading or incomplete, I will be automatically disqualified
+                        from admission or may be dismissed from St. Kizito VTI.</label>
+                    </li>
+                    <li>
+                        <label>I understand that fees once paid are not refundable under any circumstances.</label>
+                    </li>
+                    <li>
+                        <label>I agree to abide by the rules and regulations of St. Kizito VTI and any changes made thereafter.</label>
+                    </li>
+                    <li>
+                        <label>I understand that the decision of the Admission Committee of St. Kizito VTI will be final.</label>
+                    </li>
+                </ol>
+    
+                <h3>STUDENT’S DECLARATION</h3>
+                <label>I hereby declare that the information given by me in this form is true and correct to the best of my knowledge and belief.</label>
+                <input type="text" id="studentSignature" name="studentSignature" placeholder="Student's Signature">
+                <input type="date" id="studentDate" name="studentDate" placeholder="Date">
+    
+                <h3>PARENT’S/GUARDIAN’S DECLARATION</h3>
+                <label>I hereby confirm that the information given above is correct and I agree to abide by the rules and regulations of St. Kizito VTI.</label>
+                <input type="text" id="parentSignature" name="parentSignature" placeholder="Parent's/Guardian's Signature">
+                <input type="date" id="parentDate" name="parentDate" placeholder="Date">
+    
+                <input type="submit" value="Apply" onclick="event.preventDefault(); alert('We are not accepting online applications right now. Kindly try again after a while.For More information you can visit one of our Branches or call:+254745411789, You can also download/print application form from our reposirory');" style="background-color: #4CAF50; color: white; padding: 14px 20px; margin: 8px 0; border: none; cursor: pointer; width: auto;">
+
+                <input type="reset" value="Reset">
+            </form>
+            <button onclick="printForm()">Print Form</button>
+
+            <script>
+                function printForm() {
+                    window.print();
+                }
+            </script>
+        </div>
+    
+    </body>
+    
+    </html>
+    

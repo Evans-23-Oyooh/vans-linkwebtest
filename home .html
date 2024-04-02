@@ -1,0 +1,589 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>stkizito.ac.ke</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3; width:250px; background-color:whitesmoke !important;" id="mySidebar">
+  <br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu"style="font-size:20px;">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="img/logo.jpg" style="width:45%;height: 40%;" class="w3-round"><br><br>
+    <h4><b>ST.KIZITO VTI</b></h4>
+    <p class="w3-text-green"><b>A place to discover how to love work</b></p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="home .html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-home fa-fw w3-margin-right"></i>HOME</a> 
+    <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="course.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>COURSES</a>
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-phone fa-fw w3-margin-right"></i>CONTACT</a>
+    <a href="#" onclick="alert('News are currently unavailable, but we shall give you the feedbacks as long as we get the relevant information to display here.'); w3_close();" class="w3-bar-item w3-button w3-padding" style="text-decoration: none;"><i class="fa fa-newspaper-o fa-fw" style="margin-right: 10px;"></i>NEWS & UPDATES</a>
+
+    <a href="project.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>PROJECTS</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-picture-o fa-fw w3-margin-right"></i>GALARY</a>
+    <a href="#" onclick="alert('There Are No Jobs Advertisement Now , We will notify you when opened , for call: +254745411789, Thank you for visiting St.Kizito.ac.ke '); w3_close();" class="w3-bar-item w3-button w3-padding" style="text-decoration: none;"><i class="fa fa-newspaper-o fa-fw" style="margin-right: 10px;"></i>JOBS & ADVERT</a>
+    <a href="form.html" onclick="alert('We are still not accepting online applications but we will update you When They are Enabled , Meanwhile, You Can Download the application form from the repository or visit our branches /Call : +254745411789, Thank you for visiting St.Kizito.ac.ke '); w3_close();" class="w3-bar-item w3-button w3-padding" style="text-decoration: none;"><i class="fa fa-newspaper-o fa-fw" style="margin-right: 10px;"></i>ONLINE APPLICATION</a>
+
+    <a href="repository.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+      <i class="fa fa-folder fa-fw"></i> REPOSITORY & LIBRARY
+    </a>
+    <p>
+      <style>
+        .social-icon {
+          font-size: 15px; /* Adjust the size as needed */
+          margin-right: 15px; /* Optional: Adds some spacing between icons */
+          align-items: right;
+          color:black
+        }
+        .social-icon:hover{
+          background-color:grey;
+        }
+      </style>
+      <p>Our Social Media Platforms</p>
+      <span class="w3-tag w3-white w3-small w3-margin-bottom">
+        <a href="URL_TO_YOUR_FACEBOOK_PROFILE" target="_blank" class="social-icon" style="color: blue;"><i class="fab fa-facebook">FACEBOOK</i></a>
+      </span><br>
+      
+      <span class="w3-tag w3-white w3-small w3-margin-bottom">
+        <a href="URL_TO_YOUR_TWITTER_PROFILE" target="_blank" class="social-icon"><i class="fab fa-twitter">TWITTER</i></a>
+      </span><br>
+      
+      <span class="w3-tag w3-white w3-small w3-margin-bottom">
+        <a href="URL_TO_YOUR_LINKEDIN_PROFILE" target="_blank" class="social-icon" style="color: lightslategray;"><i class="fab fa-linkedin">LINKEDIN</i></a>
+      </span><br>
+      
+      <span class="w3-tag w3-white w3-small w3-margin-bottom">
+        <a href="URL_TO_YOUR_YOUTUBE_CHANNEL" target="_blank" class="social-icon"><i class="fab fa-youtube" style="color: red;">YOUTUBE</i></a>
+      </span><br>
+      
+      <span class="w3-tag w3-white w3-small w3-margin-bottom">
+        <a href="URL_TO_YOUR_INSTAGRAM_PROFILE" target="_blank" class="social-icon" style="color: burlywood;"><i class="fab fa-instagram">INSTAGRAM</i></a>
+      </span><br>
+      <p style="padding-left: 40px;">st.kizitio vti @2024 </p>
+  </div>
+
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#home"><img src="img/logo.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1 style="color: green;text-align: center;"><b>ST .KIZITO VOCATIONAL TRAINING INSTITUTE</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-black" style="background-color: green !important;">HOME</button>
+      <a href="repository.html" class="w3-button w3-white w3-hide-small">
+        <i class="fa fa-map-pin w3-margin-right"></i>REPOSITORY & LIBRARY
+    </a>
+    <a href="form.html" class="w3-button w3-white w3-hide-small" onclick="alert('Online application is not available now.Kindly Try again Later .For more information call:+254745411789 or visit one of our Branches ');">
+      <i class="fa fa-map-pin w3-margin-right"></i>ONLINE APPLICATION
+  </a>
+  
+      <a href="course.html" class="w3-button w3-white w3-hide-small">
+        <i class="fa fa-map-pin w3-margin-right"></i>COURSES
+    </a>
+    
+    <a href="#" class="w3-button w3-white w3-hide-small" onclick="alert('No News  available now.Kindly Try again Later, we promise to update you on the relevant information related to this website .For more information call:+254745411789 or visit one of our Branches ');">
+      <i class="fa fa-map-pin w3-margin-right"></i>NEWS
+  </a>
+  
+
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <style>
+    .sliding-background {
+        width: 100%;
+        height: 400px; /* Adjust height as needed */
+        overflow: hidden;
+        position: relative;
+    }
+
+    .sliding-background img {
+        width: 100%;
+        position: absolute;
+        opacity: 0;
+        animation-name: slide;
+        animation-duration: 15s; /* Adjust duration as needed */
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+    .sliding-background img:nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    .sliding-background img:nth-child(2) {
+        animation-delay: 5s; /* Delay based on the duration of the first image */
+    }
+
+    .sliding-background img:nth-child(3) {
+        animation-delay: 10s; /* Delay based on the duration of the second image */
+    }
+
+    @keyframes slide {
+        0%, 100% {
+            opacity: 0;
+            transform: scale(1);
+        }
+        8%, 33% {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+        41%, 91% {
+            opacity: 0;
+            transform: scale(1);
+        }
+    }
+</style>
+<div class="w3-row-padding">
+  <div class="w3-col s24 sliding-background">
+      <img src="img/capentry.jpg" alt="Description of the image" class="w3-image">
+      <img src="img/background.jpg" alt="Description of the image" class="w3-image">
+      <img src="img/d53b48928558.jpg" alt="Description of the image" class="w3-image">
+  </div>
+</div>
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding" style="padding-bottom: 30px; display: flex; flex-wrap: wrap;">
+
+    <!-- Merged Location and Map -->
+    <div class="w3-third w3-container w3-margin-bottom" style="flex-basis: 100%; max-width: 100%;">
+        <div class="w3-container w3-white">
+            <p><b>Our Location</b></p>
+            <p>Nairobi, Githurai Mwihoko Road </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3964.901746262609!2d36.8947!3d-1.2326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48205e1374423594!2sSt%20kizito%20VTI%20Githurai%20Branch%20%2B%20Italian%20design%20furniture(IDF)!5e0!3m2!1sen!2sus!4v1648424848947!5m2!1sen!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </div>
+    </div>
+
+    <!-- Founder Members and We are a TVET Institute in one row -->
+    <div class="w3-full w3-container w3-margin-bottom" style="flex-basis: 100%; max-width: 100%;">
+        <div class="w3-container w3-white">
+            <p><b>Founder Members</b></p>
+            <p>The late cardinal Maurice Michael Otunga, former Archbishop of Nairobi, in 1990 asked A.V.S.I. (an International NGO - www.avsi.org) to establish a technical school in the poor areas of the city. He told to AVSI management:
+                "Kenya, and particularly Nairobi, have an urgent need of educational opportunities in the technical field:the youth who are jobless and often on the brink of desperation and criminality... I am sure that not only the technical but also the human aspects of such an enterprise would be taken care of." .
+            </p>
+        </div>
+    </div>
+
+    <div class="w3-full w3-container w3-margin-bottom" style="flex-basis: 100%; max-width: 100%;">
+        <div class="w3-container w3-white">
+            <p><b>We are a TVET Institute</b></p>
+            <p>A Vocational Training Institute of the CATHOLIC ARCHDIOCESE OF NAIROBI
+                an Institute of Technology & Examination Centre Registered by the Government 
+                Useful Information;
+                Registration No.<br> TVET/PRIVATEVTC/008/2019
+                PIN No. P051097616A (ARCH-DIOCESE OF NAIROBI)
+                PO Box 759 - 00618 RUARAKA - NAIROBI – KENYA
+                The beneficiaries of St. Kizito are the students; their growth and learning can be obtained only from committed managers and teachers who share their sense of responsibility and knowledge...............</p>
+        </div>
+    </div>
+    
+</div>
+
+<!-- Media Query for Mobile View -->
+<style>
+@media screen and (max-width: 768px) {
+    .w3-third, .w3-half {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+</style>
+
+<div class="w3-full" style="width: 98%; margin-left: auto; margin-right: auto; border: 1px solid green;">
+      <h4 style="text-align: center;">Our Partners</h4>
+      <table style="width: 100%; border-collapse: separate; border-spacing: 20px;">
+        <tr>
+            <td style="width: 33.33%; padding-top: 20px;">
+                <img src="img/avsi.jpg" alt="AVSI Logo" style="height: 50px; width: 50px; object-fit: cover;">
+            </td>
+            <td style="width: 33.33%; padding-top: 20px;">
+                <img src="img/cowa.jpg" alt="AVSI Logo" style="height: 50px; width: 50px; object-fit: cover;">
+            </td>
+            <td style="width: 33.33%; padding-top: 20px;">
+                <img src="img/dioces logo.jpg" alt="AVSI Logo" style="height: 50px; width: 50px; object-fit: cover;">
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 33.33%; padding-top: 20px;">
+                <img src="img/nita.png" alt="AVSI Logo" style="height: 50px; width: 50px; object-fit: cover;">
+            </td>
+            <td style="width: 33.33%; padding-top: 20px;">
+                <img src="img/knec.jpg" alt="AVSI Logo" style="height: 50px; width: 50px; object-fit: cover;">
+            </td>
+            <td style="width: 33.33%; padding-top: 20px;">
+                <img src="img/tveta.png" alt="AVSI Logo" style="height: 50px; width: 50px; object-fit: cover;">
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 33.33%; padding-top: 20px;">
+                <img src="img/itali.jpg" alt="AVSI Logo" style="height: 50px; width: 50px; object-fit: cover;">
+            </td>
+            <td style="width: 33.33%; padding-top: 20px;">
+                <img src="img/cowa.jpg" alt="AVSI Logo" style="height: 50px; width: 50px; object-fit: cover;">
+            </td>
+            <td style="width: 33.33%; padding-top: 20px;">
+                <img src="img/adesk.png" alt="AVSI Logo" style="height: 50px; width: 50px; object-fit: cover;">
+            </td>
+        </tr>
+      </table>
+      </div>
+      
+      <h4 id="jobs" style="text-align: center;"><b>Jobs Announced  </b></h4>
+    <div class="w3-third w3-container"style="padding: top 40px;">
+      <div class="w3-container w3-green">
+        <p><b>Finance Office/Accountant (1)</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container"style="padding: top 40px;">
+      <div class="w3-container w3-green">
+        <p><b>Plumbing Trainer (2)Male & Female</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container"style="padding: top 40px;">
+      <div class="w3-container w3-green">
+        <p><b>Guest House Attendance(2)</b></p>
+        <p>St.kizito Would like to involve public participation and public interest on a newly short course of solar energy and solar installation</p>
+      </div>
+    </div>
+  
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#courses" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#galary" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+  <!-- Images of Me -->
+  <div class="w3-row-padding w3-padding-24" id="about">
+    <div class="w3-col m4SS">
+      <img src="img/computerlab.jpg" alt="Me" style="width:100%;height: 50%;">
+    </div>
+  </div>
+  <div class="w3-full" style="width: 100%; margin-left: auto; margin-right: auto; border: 1px solid yellowgreen;">
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4 id="#about"><b>About Us</b></h4>
+    <p>The late cardinal Maurice Michael Otunga, former Archbishop of Nairobi, in 1990 asked A.V.S.I. (an International NGO - www.avsi.org) to establish a technical school in the poor areas of the city. He told to AVSI management:
+
+      "Kenya, and particularly Nairobi, have an urgent need of educational opportunities in the technical field: so frightfully many are, in fact, the youth who are jobless and often on the brink of desperation and criminality... I am sure that not only the technical but also the human aspects of such an enterprise would be taken care of."
+      
+       
+      
+      In fact, Nairobi is facing problems and contradiction caused by an unbalanced and vertiginous population growth. The problems of youth are very serious: thousands of them leaving school before they complete their studies and, while few, with a lot of difficulties, find a job, many are unemployed. The problem is even greater for the youth coming from the outskirts of the city, who, having completed their primary education, cannot continue any further and end up with no qualification at all. For them the possibility of employment and the chance of a dignified life becomes rather slim.
+      
+      In the socio-economic context described above, the primary needs facing the youth living in Nairobi are:
+      
+      ·         The opportunity of adequate professional training;
+      
+      ·         The identification of job opportunities;
+      
+      ·         To spread amongst the youth sentiments of self esteem and a spirit of solidarity at work.</p>
+    <hr>
+    <h4><b>St Kizito:</b></h4>
+    <p>St. Kizito is;
+      a Vocational Training Institute of the CATHOLIC ARCHDIOCESE OF NAIROBI
+      an Institute of Technology & Examination Centre Registered by the Government 
+      Useful Information;
+      Registration No. TVET/PRIVATEVTC/008/2019
+      PIN No. P051097616A (ARCH-DIOCESE OF NAIROBI)
+      PO Box 759 - 00618 RUARAKA - NAIROBI – KENYA</p>
+  </div>
+    <hr>
+    <div class="w3-full" style="width: 100%; margin-left: auto; margin-right: auto; border: 1px solid yellowgreen;">
+    <h4 style="text-align: center;">Our Courses Ranks On Market Demand  and Job Placement Analysis Over The Past Few Years </h4>
+    <!-- Progress bars / Skills -->
+    <p style="padding-left: 20px;">ICT</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%;background-color:yellowgreen !important">95%</div>
+    </div>
+    <p style="padding-left: 20px;">Eectrical,electronic installation & PLC </p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85% ;background-color:yellowgreen !important">85%</div>
+    </div>
+    <p style="padding-left: 20px;">Plumbing And Welding</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:87% ;background-color:yellowgreen !important">87%</div>
+    </div>
+    <p>
+      <p style="padding-left: 20px;">Deffensive Driving</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:97% ;background-color:yellowgreen !important">97%</div>
+      </div>
+      <p>
+        <p>
+          <p style="padding-left: 20px;">Mechanic and Automotive Engineering</p>
+          <div class="w3-grey">
+            <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:97% ;background-color:yellowgreen !important">97%</div>
+          </div>
+          <p>
+        <p style="padding-left: 20px;">carpentry $ cabinet making/wood technology</p>
+        <div class="w3-grey">
+          <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:84% ;background-color:yellowgreen !important">84%</div>
+        </div>
+        <p>
+          <p style="padding-left: 20px;">cookeries,pastry and food technology</p>
+          <div class="w3-grey">
+            <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:88%;background-color:yellowgreen !important">88%</div>
+          </div>
+          <p>
+          </div>
+          <div class="w3-full" style="width: 100%; margin-left: auto; margin-right: auto; border: 1px solid green;"></div>
+            <h4 id=""style="text-align:center;"><b>School Repository </b></h4>
+            
+            <a href="Repository/Course Application Form.pdf" download>
+              <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom" style="background-color: green !important;">
+                <i class="fa fa-download w3-margin-right"></i>Application Form
+              </button>
+            </a>
+      
+      <a href="Repository/1698397435674_KPC ADVERT.pdf" download>
+        <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom" style="background-color: green !important;">
+          <i class="fa fa-download w3-margin-right"></i>Policy & Requlation
+        </button>
+      </a>
+    
+    <a href="Repository/1698397435674_KPC ADVERT.pdf" download>
+      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom" style="background-color: green !important;">
+        <i class="fa fa-download w3-margin-right"></i>Exam Results
+      </button>
+    </a>
+    <a href="Repository/1698397435674_KPC ADVERT.pdf" download>
+    <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom" style="background-color: green !important;">
+      <i class="fa fa-download w3-margin-right"></i>Download fee structure
+    </button>
+  </a>
+  <h4 id="" style="text-align: center;"><b>Library and E-Learning  Latest </b></h4>
+  <a href="Repository/computer-packages (1).pdf" download>
+    <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom" style="background-color: cyan !important;">
+      <i class="fa fa-download w3-margin-right"></i>School Of Informatics
+    </button>
+  </a>
+  <a href="Repository/1698397435674_KPC ADVERT.pdf" download>
+    <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom" style="background-color:cyan!important;">
+      <i class="fa fa-download w3-margin-right"></i>School Of Electronics
+    </button>
+  </a>
+  <a href="Repository/1698397435674_KPC ADVERT.pdf" download>
+    <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom" style="background-color: cyan !important;">
+      <i class="fa fa-download w3-margin-right"></i>School Of Mechanics
+    </button>
+  </a>
+  <a href="Repository/1698397435674_KPC ADVERT.pdf" download>
+    <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom" style="background-color:cyan !important;">
+      <i class="fa fa-download w3-margin-right"></i>Bronchures
+    </button>
+  </a>
+  </div>
+<div style="display: flex; justify-content: space-around;">
+
+  <p class="w3-light-grey w3-padding-16"><button class="w3-button w3-teal w3-padding-large w3-hover-black" onclick="alert('E-Learning  portal is currently unavailable,We are Working to ensure that everyrhing is availed for you , Meanwhile You can Visit one of our Branches  or call +254745411789 for help.');">E-LEARNING PORTAL</button></p><br>
+
+  <p class="w3-light-grey w3-padding-16"><button class="w3-button w3-teal w3-padding-large w3-hover-black" onclick="alert('Student portal is currently unavailable,We are Working to ensure that everyrhing is availed for you , Meanwhile You can Visit one of our Branches  or call +254745411789 for help.');">STUDENT PORTAL</button></p><br>
+</div>
+</div>
+
+    <hr>
+    <footer class="w3-container w3-padding-32 w3-green;">
+      <div class="w3-row-padding">
+          
+          <div class="w3-third">
+              <h3>OUR MISSION</h3>
+              <p>
+                  To be a model institution mainly oriented to the less privileged youth which offers a holistic education, provides quality technical, entrepreneurial and vocational skills always in line with emerging technologies and new ways of training.</p>
+              <h4 style="text-align: center;">Our Partners</h4>
+              <table style="width: 100%; border-collapse: separate; border-spacing: 20px;">
+                  <tr>
+                      <td style="width: 33.33%; padding-top: 20px;">
+                          <img src="img/avsi.jpg" alt="AVSI Logo" style="height: 50px; width: 50px; object-fit: cover;">
+                      </td>
+                      <td style="width: 33.33%; padding-top: 20px;">
+                          <img src="img/cowa.jpg" alt="AVSI Logo" style="height: 50px; width: 50px; object-fit: cover;">
+                      </td>
+                      <td style="width: 33.33%; padding-top: 20px;">
+                          <img src="img/dioces logo.jpg" alt="AVSI Logo" style="height: 50px; width: 50px; object-fit: cover;">
+                      </td>
+                  </tr>
+                  <tr>
+                      <td style="width: 33.33%; padding-top: 20px;">
+                          <img src="img/nita.png" alt="AVSI Logo" style="height: 50px; width: 50px; object-fit: cover;">
+                      </td>
+                      <td style="width: 33.33%; padding-top: 20px;">
+                          <img src="img/knec.jpg" alt="AVSI Logo" style="height: 50px; width: 50px; object-fit: cover;">
+                      </td>
+                      <td style="width: 33.33%; padding-top: 20px;">
+                          <img src="img/tveta.png" alt="AVSI Logo" style="height: 50px; width: 50px; object-fit: cover;">
+                      </td>
+                  </tr>
+                  <tr>
+                      <td style="width: 33.33%; padding-top: 20px;">
+                          <img src="img/itali.jpg" alt="AVSI Logo" style="height: 50px; width: 50px; object-fit: cover;">
+                      </td>
+                      <td style="width: 33.33%; padding-top: 20px;">
+                          <img src="img/cowa.jpg" alt="AVSI Logo" style="height: 50px; width: 50px; object-fit: cover;">
+                      </td>
+                      <td style="width: 33.33%; padding-top: 20px;">
+                          <img src="img/adesk.png" alt="AVSI Logo" style="height: 50px; width: 50px; object-fit: cover;">
+                      </td>
+                  </tr>
+              </table>
+          </div>
+  
+          <div class="w3-third">
+              <h3>VISION</h3>
+              <ul class="w3-ul w3-hoverable">
+                  <li class="w3-padding-16">
+                      <img src="img/logo.jpg" class="w3-left w3-margin-right" style="width:50px">
+                      <span class="w3-large">To provide an educative environment where students, management and staff acknowledge their value, dignity and talents through communitarian life acquiring suitable skills aligned with the job market and emerging technologies in partnership with relevant companies and organizations.</span><br>
+                  </li>
+                  <li class="w3-padding-200" style="text-align: right;">
+                      <span class="w3-large">SPONSORED BY:</span><br>
+                      <span>ARCH DIOCESE OF NAIROBI</span>
+                  </li>
+              </ul>
+          </div>
+  
+          <div class="w3-third">
+            <h3>POPULAR</h3>
+            <p>
+                <span class="w3-tag w3-black w3-margin-bottom">More Info</span>
+                <span class="w3-tag w3-grey w3-small w3-margin-bottom">news</span>
+                <span class="w3-tag w3-grey w3-small w3-margin-bottom">facebook</span>
+                <span class="w3-tag w3-grey w3-small w3-margin-bottom">courses</span>
+                <span class="w3-tag w3-grey w3-small w3-margin-bottom">graduations</span>
+                <span class="w3-tag w3-grey w3-small w3-margin-bottom">Partners</span>
+                <span class="w3-tag w3-grey w3-small w3-margin-bottom">feedbacks</span>
+                <span class="w3-tag w3-grey w3-small w3-margin-bottom">testimonials</span>
+                <span class="w3-tag w3-grey w3-small w3-margin-bottom">Linkedin</span>
+                <span class="w3-tag w3-grey w3-small w3-margin-bottom">Youtube</span>
+                <span class="w3-tag w3-grey w3-small w3-margin-bottom">Instagram</span>
+                <span class="w3-tag w3-grey w3-small w3-margin-bottom">e-learning</span>
+                <span class="w3-tag w3-grey w3-small w3-margin-bottom">Repository</span>
+            </p>
+    
+        </div>
+        <div class="w3-third" style="padding-left: 50px;">
+          <h3>ADDRESS</h3>
+          <p>
+            PO BOX <br>
+            759 - 00618<br>
+             RUARAKA - NAIROBI<br>
+              KENYA
+          </p>
+  
+      </div>
+          
+          <!-- Image at the lower right corner -->
+      </div>
+      <a href="https://wa.me/+254745411789?text=Hello%20there!" 
+     style="position: fixed; 
+            bottom: 20px; 
+            right: 60px; 
+            background-color: #25D366; 
+            color: white; 
+            padding: 10px 20px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            z-index: 1000; 
+            margin-bottom: 10px;">
+      <i class="fab fa-whatsapp" 
+         style="margin-right: 10px;"></i>
+      WhatsApp Us
+  </a>
+  
+  
+  <!-- Phone Call Button -->
+  <a href="tel:+254745411789" 
+     style="position: fixed; 
+            bottom: 80px; 
+            right: 60px; 
+            background-color: greenyellow; 
+            color: white; 
+            padding: 10px 20px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            z-index: 1000;">
+      <i class="fas fa-phone-alt" 
+         style="margin-right: 10px;"></i>
+      Call Us
+  </a>
+  </footer>
+  
+    
+    <div class="w3-black w3-center w3-padding-16"style="background-color:yellowgreen !important;">Developed by vans-link</a></div>
+  
+  <!-- End page content -->
+  </div>
+  
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+  
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+    
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('contactForm');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', 'send-email.php'); // replace 'send-email.php' with your server-side script URL
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        alert('Email sent successfully!');
+      } else if (xhr.readyState === 4 && xhr.status !== 200) {
+        alert('There was an error sending the email.');
+      }
+    };
+
+    xhr.send(formData);
+  });
+});
+
+</script>
+
+  
+  
+</body>
+</html>
